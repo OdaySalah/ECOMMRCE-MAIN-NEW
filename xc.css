@@ -1,0 +1,688 @@
+.card-content {
+  position: relative;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  min-height: 320px; /* ارتفاع ثابت للكارد */
+  max-height: 320px; /* الحد الأقصى لارتفاع الكارد */
+  overflow: hidden;
+  width: 80%;
+  /* منع النص من الخروج من الكارد */
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: "Arial", sans-serif;
+}
+
+/* Design for card */
+
+.card-content img {
+  max-height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+h5 {
+  font-weight: bold;
+  color: #333;
+}
+
+.price {
+  color: #ff0800; /* Red highlight */
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* إبقاء النص في سطر واحد */
+
+/* Discount badge */
+.discount {
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ff0800;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* Icons overlay (hidden initially, appear on hover) 
+      .icons-overlay {
+        position: absolute;
+        right: 10px;
+
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+      }
+
+      .card-content:hover .icons-overlay {
+        opacity: 1;
+      }
+*/
+.product-action {
+  list-style: none;
+  padding: 30px;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.product-action li {
+  color: var(--dark-color);
+  width: 50px;
+  height: 50px;
+  background-color: #efeeee;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.product-action li:hover {
+  background-color: #ff0800;
+}
+.product-action li a {
+  color: #ff0800;
+}
+.product-action li:hover a i {
+  color: #fff;
+}
+
+/* Pagination */
+.pagination {
+  justify-content: center;
+  margin-top: 20px;
+  z-index: 999;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 0;
+}
+
+.pagination .page-link {
+  display: inline-block;
+  margin: 10px;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+
+  border-radius: 50%;
+  background-color: #efeeee;
+  cursor: pointer;
+  color: #ff0800;
+}
+
+.pagination .page-link:hover {
+  background-color: #ff0800;
+  color: #fff;
+}
+
+.pagination .active .page-link {
+  background-color: #ff0800;
+  color: #fff;
+  border: none;
+}
+
+.page-item.disabled .page-link {
+  color: #ddd;
+}
+
+.card-container {
+  background-color: #fcfffc;
+  padding: 30px;
+  padding-right: 90px;
+  border-radius: 10px;
+  text-align: center;
+}
+/***lllllllllllllllllll*/
+@media (max-width: 600px) {
+  .pagination .page-link {
+    display: inline-block;
+    margin: 8px;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+
+    border-radius: 30%;
+    background-color: #efeeee;
+    cursor: pointer;
+    color: #ff0800;
+  }
+}
+.compare-container {
+  margin-top: 50px;
+  border-color: #ff0800;
+}
+.product-card {
+  background-color: white;
+  border-bottom: 1px solid #ff0800;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.product-features {
+  text-align: center;
+  font-size: 0.9rem;
+}
+.feature-row {
+  border-bottom: 1px solid #dee2e6;
+  padding: 10px 0;
+}
+.feature-row:last-child {
+  border-bottom: none;
+}
+.btn-custom {
+  background-color: #ff0800;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+.btn-custom:hover {
+  background-color: #ff0800;
+}
+.cvb {
+  border-radius: 25px;
+}
+/*,,,,,,,,,,,,,,,,,,,,,,,,,,,,*/
+
+.about-content,
+.team-content,
+.testimonials-content,
+.features-content,
+.counter-content,
+.faq-content,
+.contact-content {
+  padding: 50px 0;
+}
+.counter-box {
+  text-align: center;
+  padding: 20px;
+}
+.counter-box h3 {
+  margin-top: 10px;
+  color: #ff0800; /* لون النص أحمر */
+}
+.feature-box,
+.faq-box {
+  text-align: center;
+  padding: 20px;
+}
+.faq-box p {
+  margin-bottom: 10px;
+}
+.testimonial-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: #ff0800; /* لون زر الرجوع لأعلى */
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+}
+.btn-outline-danger {
+  background-color: #ff0800;
+  color: white;
+}
+.btn-outline-danger:hover {
+  background-color: #ffffff;
+  color: #ff0800;
+}
+
+.img-fluid {
+  width: 90%;
+  height: 90%;
+  margin-top: -50px;
+}
+#contact {
+  background-color: #fff;
+}
+.section-title {
+  margin-bottom: 30px;
+  text-align: center;
+  color: #ff0800; /* لون العنوان الرئيسي */
+}
+.hero-section {
+  background-color: #ffff; /* خلفية خفيفة باللون الأحمر */
+  padding: 50px 0;
+  text-align: center;
+  color: #ff0800; /* لون النص أحمر */
+  box-shadow: 1px 1px 1px 1px rgba(255, 0, 0, 0.548);
+}
+/*-------------------*/
+.form-container {
+  padding: 30px;
+  background-color: #ffffff; /* لون خلفية القسم */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.btn {
+  background-color: #ff0800; /* لون الزر */
+  border-color: #ff0800;
+}
+.btn:hover {
+  background-color: #ff0800; /* لون الزر عند التمرير */
+}
+hr {
+  border: 1px solid #ff0800; /* خط فاصل باللون الأحمر */
+}
+.log {
+  width: 100px;
+  height: 100px;
+}
+#phone {
+  text-align: right;
+}
+/*nnnnnnn*/
+
+.account-container {
+  margin: 150px;
+  max-width: 100%;
+  background-color: white;
+
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  overflow: hidden;
+}
+.account-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 2px solid #ff0800;
+  padding-bottom: 15px;
+  overflow: hidden;
+}
+.account-header img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 3px solid #ff0800;
+}
+.account-header h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+.account-body {
+  margin-top: 20px;
+}
+.section-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+.section {
+  margin-bottom: 30px;
+  border-bottom: 3px solid #ff0800;
+  box-shadow: #333 10px;
+  width: 100%;
+}
+.btn-custom {
+  background-color: #a76a25;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.btn-custom:hover {
+  background-color: #a76a25;
+}
+.card-custom {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+}
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.order-item span {
+  font-size: 1rem;
+}
+.order-item strong {
+  color: #007bff;
+}
+#detaijs {
+  margin-top: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  height: 300px;
+  border-radius: 10px;
+  align-content: center;
+}
+#payadd {
+  margin-top: 10px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  align-content: center;
+  height: 300px;
+  width: 100%;
+}
+#payadd2 {
+  margin-top: 10px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-left: 2%;
+  height: 300px;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+}
+li {
+  margin-bottom: 25px;
+}
+.we {
+  margin-bottom: -6%;
+}
+
+.btn-custom {
+  height: 40px;
+  border-radius: 30px; /* جعل الزر دائري مستطيل */
+  padding: 0px 30px;
+  background-color: #ff0800;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px; /* مسافة بين الأزرار */
+  margin-top: 20px;
+}
+
+.btn-custom:hover {
+  background-color: rgb(255, 255, 255);
+}
+#accountheader1 {
+  text-align: center;
+  margin-top: 2%;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+@media (max-width: 750px) {
+  .btn-container {
+    display: block;
+    justify-content: center;
+    gap: 15px; /* مسافة بين الأزرار */
+    height: 100%;
+  }
+  .btn-custom {
+    margin-bottom: 20px;
+    text-align: center;
+    height: 40px;
+    border-radius: 30px; /* جعل الزر دائري مستطيل */
+
+    background-color: #ff0800;
+  }
+  #detaijs {
+    height: 100%;
+  }
+}
+
+.payment-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.payment-container h2 {
+  color: #ff0800;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-select {
+  margin-bottom: 20px;
+}
+
+.btn-submit {
+  background-color: #ff0800;
+  color: #fff;
+  border: none;
+}
+
+.btn-submit:hover {
+  background-color: #ff0800;
+}
+/*mmmmmmmmmmmmmmmm*/
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap");
+.section-title {
+  color: #ff0800;
+  font-size: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+hr {
+  width: 60%;
+  margin-right: 20%;
+}
+.section-content {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.btn-red {
+  background-color: #ff0800;
+  color: #fff;
+  border: none;
+}
+.btn-red:hover {
+  background-color: #ff0800;
+}
+.contact-info {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+  color: #ff0800;
+}
+/*bbbbbbbbbbbbbbbbbbb*/
+
+section {
+  margin: 20px auto;
+  width: 80%; /* لضمان التوسيط */
+  text-align: center;
+}
+
+h2 {
+  color: #ff0800;
+}
+
+.contact-info,
+.faq,
+.contact-form {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 50px;
+}
+
+.contact-info p,
+.faq p {
+  margin: 10px 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.contact-form button {
+  background-color: #ff0800;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #f5f5f5;
+  color: #ff0800;
+}
+
+.return-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff0800;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.return-btn:hover {
+  background-color: #ffffff;
+  color: #ff0800;
+}
+
+/* التعليقات وسكرول مخفي */
+.comments-section {
+  font-size: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 200px; /* التحكم بالارتفاع لظهور سكرول مخفي */
+  overflow: hidden; /* اخفاء السكرول */
+  position: relative;
+}
+
+.comments-content {
+  height: 100%;
+  width: calc(100% + 20px); /* عرض إضافي للسماح بالسحب الأفقي */
+  overflow-y: auto;
+  padding-right: 20px;
+}
+
+.comments-content::-webkit-scrollbar {
+  width: 0; /* إخفاء الشريط */
+}
+.header1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ff1e16;
+}
+
+.notification {
+  width: 100%;
+  background-color: #ff1e16;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  font-size: 1.2rem;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: #ff1e16;
+}
+
+.purchase-list {
+  list-style: none;
+}
+
+.purchase-item {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  border-bottom: 1px solid #ff2e2e;
+  margin-bottom: 10px;
+}
+
+.purchase-item:last-child {
+  border-bottom: none;
+}
+
+.product-details,
+.order-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-name {
+  font-size: 1.2rem;
+  color: #ff1e16;
+  margin-bottom: 5px;
+}
+
+.order-date,
+.price {
+  font-size: 1rem;
+  color: #666;
+}
+
+.load-more {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+}
+
+.load-more:hover {
+  background-color: #ff1e16;
+}
+.im-date {
+  width: 200px;
+  height: 200px;
+}
+.log {
+  width: 100px;
+  height: 100px;
+}
+@media (max-width: 768px) {
+  .purchase-item {
+    flex-direction: column;
+  }
+
+  .load-more {
+    width: 100%;
+  }
+}

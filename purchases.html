@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Z | Online Store</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="swiperJs/swiper-bundle.min.css" />
+
+    <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Link File CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="xc.css">
+</head>
+<body class="menu-side-in-bag">
+
+    <header>
+          
+
+        <div class="header-top">
+            <div class="contanier">
+             <p> مرحبا بكم في متجر Z</p>
+             <div class="link-top-heder">
+                <a href="myaccount.html">الحساب</a>
+                <a href="mywishlist.html">المفضلات</a>
+                <a href="sign-in-page.html">تسجيل الدخول</a>
+                <a href="compare.html">مقارنة المنتجات</a>
+             </div>
+         </div>
+           </div>
+
+           <div class="header-info">
+            <div class="contanier">
+            <a href="index.html">  <img  class="log" src="images/logo.png" alt=""></a>  
+            
+            <div class="search-bar">
+                <form action="">
+                    <input type="search" placeholder="ابحث عن طلبك...">
+                    <button class="btn-srch">بحث</button>
+                </form>
+            </div>
+            <div class="card">
+              <div class="price">
+                <p>السلة :</p>
+                <span>255.00 جنيه</span>
+                <a href="mycart.html"
+                  ><i class="fa-solid fa-bag-shopping"></i>
+                  <span class="count-in-card">2</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-bottom">
+           <div class="contanier">
+                <i id="open-side" class="fa-solid fa-bars"></i>
+            <ul class="nav-links">
+                    
+                <li><a href="index.html"> الرئيسة</a>
+                
+                </li>
+
+      
+
+                <li>
+                    <a href="features.html"> الأدوات المنزلية</a>
+                </li>
+
+                <li>
+                    <a href="hmtls.html">الموبايلات و اكسسواراتها</a>
+                </li>
+                <li><a href="cloths.html"> الملابس </a></li>
+
+                <li><a href="betuflpage.html"> مستحضرات الجمال</a></li>
+                <li><a href="furniture.html"> المفروشات</a></li>
+              
+
+
+            </ul>
+            <a href="sign-up-page.html" class="sign-in-btn"><i class="fa-solid fa-user-plus"></i> انشاء حساب </a>
+
+            
+           </div>
+        </div>
+
+
+    </header>
+
+    <section class="slide-sec contanier">
+        <div id="side-bar" class="side-bar">
+            <h5><i class="fa-solid fa-bars"></i> SHOP BY DEPARTMENT</h5>
+            <img class="log" src="images/logo.png" alt="" />
+            <i id="btn-close" class="fa-solid fa-bars fa-times"></i>
+            <ul class="side-links">
+                <a href="furniture.html"><li>الاجهزة المنزلية</li></a>
+               
+                <a href="hmtls.html"><li>الشواحن</li></a>
+                <a href="furniture.html"><li>المفروشات</li></a>
+                <a href="hmtls.html"><li>الهواتف</li></a>
+                <a href="cloths.html"><li>الملابس</li></a>
+                
+                <a href="hmtls.html"><li>اكسسوارات</li></a>
+                <a href="betuflpage.html"><li>مستحضرات التجميل</li></a>
+               
+
+            </ul>
+
+            
+        </div>
+
+    </section>
+    
+  <style>
+   
+  </style>
+
+  <body>
+   
+
+    <!-- Alert notification -->
+    <div class="notification">
+      إشعار: تم تحميل أحدث 20 عملية شراء
+    </div>
+
+    <div class="header1">
+      <h1>آخر المشتريات</h1>
+      --
+      <span class="order-date">bbbbb@gmail.com</span>
+    
+    </div>
+
+    <div class="container">
+      <ul id="purchase-list" class="purchase-list">
+        <!-- JavaScript will populate this list -->
+      </ul>
+      <small class="text-body-secondary">
+        <button id="load-more" class="btn btn-custom mt-3 load-more">عرض المزيد</button>
+      </small>
+      
+    </div>
+
+    <script>
+      const purchases = [
+        {
+          name: "منتج 1",
+          orderDate: "2024-09-01",
+          price: "50$",
+          im: "img/product-9.jpg",
+          quantity: "3"
+        },
+        {
+          name: "منتج 2",
+          orderDate: "2024-09-03",
+          price: "120$",
+          im: "img/product-9.jpg",
+          quantity: "3"
+        },
+        {
+          name: "منتج 3",
+          orderDate: "2024-09-05",
+          price: "30$",
+          im: "img/product-9.jpg",
+          quantity: "3"
+        },
+        {
+          name: "منتج 4",
+          orderDate: "2024-09-06",
+          price: "80$",
+          im: "img/product-9.jpg",
+          quantity: "3"
+        },
+        {
+          name: "منتج 5",
+          orderDate: "2024-09-07",
+          price: "40$",
+          im: "img/product-9.jpg",
+          quantity: "3"
+        },
+        {
+          name: "منتج 6",
+          orderDate: "2024-09-08",
+          price: "200$",
+          im: "img/product-9.jpg",
+          quantity: "3"
+        },
+        {
+          name: "منتج 7",
+          orderDate: "2024-09-09",
+          price: "25$",
+          im: "img/product-9.jpg",
+          quantity: "3"
+        },
+        {
+          name: "منتج 8",
+          orderDate: "2024-09-10",
+          price: "100$",
+          im: "img/product-9.jpg",
+          quantity: "3"
+        },
+        {
+          name: "منتج 9",
+          orderDate: "2024-09-12",
+          price: "150$",
+          im: "img/product-9.jpg",
+          quantity: "3"
+        },
+        {
+          name: "منتج 10",
+          orderDate: "2024-09-14",
+          price: "70$",
+          im: "img/product-9.jpg",
+          quantity: "3"
+        },
+        {
+          name: "منتج 11",
+          orderDate: "2024-09-15",
+          price: "90$",
+          im: "img/product-9.jpg",
+          quantity: "3"
+        },
+        {
+          name: "منتج 12",
+          orderDate: "2024-09-17",
+          price: "60$",
+          im: "img/product-9.jpg",
+          quantity: "3"
+        },
+        {
+          name: "منتج 13",
+          orderDate: "2024-09-18",
+          price: "300$",
+          im: "img/product-9.jpg",
+          quantity: "3"
+        },
+        {
+          name: "منتج 14",
+          orderDate: "2024-09-19",
+          price: "450$",
+          im: "img/product-9.jpg",
+          quantity: "3"
+        },
+        {
+          name: "منتج 15",
+          orderDate: "2024-09-20",
+          price: "120$",
+          im: "img/product-9.jpg",
+          quantity: "3"
+        },
+        {
+          name: "منتج 16",
+          orderDate: "2024-09-21",
+          price: "35$",
+          im: "img/product-9.jpg",
+          quantity: "3"
+        },
+        {
+          name: "منتج 17",
+          orderDate: "2024-09-22",
+          price: "400$",
+          im: "img/product-9.jpg",
+          quantity: "3"
+        },
+        {
+          name: "منتج 18",
+          orderDate: "2024-09-23",
+          price: "75$",
+          im: "img/product-9.jpg",
+          quantity: "3"
+        },
+        {
+          name: "منتج 19",
+          orderDate: "2024-09-24",
+          price: "150$",
+          im: "img/product-9.jpg",
+          quantity: "3"
+        },
+        {
+          name: "منتج 20",
+          orderDate: "2024-09-25",
+          price: "500$",
+          im: "img/product-9.jpg",
+          quantity: "3"
+        }
+      ];
+
+      let displayedCount = 9;
+
+      function renderPurchases() {
+        const purchaseList = document.getElementById("purchase-list");
+        purchaseList.innerHTML = "";
+
+        purchases.slice(0, displayedCount).forEach(purchase => {
+          const purchaseItem = document.createElement("li");
+          purchaseItem.classList.add("purchase-item");
+
+          purchaseItem.innerHTML = `
+            <div class="product-details">
+                <span class="product-name">${purchase.name}</span>
+                <span class="order-date">تاريخ الطلب: ${purchase.orderDate}</span>
+                <img src=${purchase.im} class="im-date"></img>
+            </div>
+            <div class="order-details">
+              <span class="price">الكمية: ${purchase.quantity}</span>
+                <span class="price">السعر: ${purchase.price}</span>
+            </div>
+        `;
+
+          purchaseList.appendChild(purchaseItem);
+        });
+      }
+
+      document.getElementById("load-more").addEventListener("click", () => {
+        if (displayedCount < 20) {
+          displayedCount += 9;
+          renderPurchases();
+        } else {
+          document.getElementById("load-more").style.display = "none";
+        }
+      });
+
+      // Initial render
+      renderPurchases();
+    </script>
+    <div class="back-top">
+      <a href="#">الرجوع للأعلي</a>
+    </div>
+  
+
+    <footer>
+        <div class="contanier">
+            <div class="top-footer">
+                <div class="row">
+                        <img  class="log" src="images/logo.png" alt="">
+                    <div class="hotline">
+                        
+                        <div class="hotline-text">
+                            <h6>خدمة عملاء 24/7</h6>
+                            <span>(+100) 123 456 7890</span>
+                        </div>
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    
+                </div>
+                <div class="small-row">
+                    <h6> اعرف المزيد عنا</h6>
+                    <div class="links-row">
+                        <a href="about.html"> <i class="fa-solid fa-angle-left"></i>معلومات عن Z </a>
+                        <a href="Shipping -delivery.html"><i class="fa-solid fa-angle-left"></i>الشحن و التوصيل </a>
+                       
+                    </div>
+                </div>
+
+                <div class="small-row">
+                    <h6> تسوق معنا</h6>
+                    <div class="links-row">
+                        <a href="myaccount.html"><i class="fa-solid fa-angle-left"></i>حسابك</a>
+                        <a href="purchases.html"> <i class="fa-solid fa-angle-left"></i>مشترياتك</a>
+                   
+                    </div>
+                </div>
+
+                <div class="small-row">
+                    <h6> دعنا نساعدك</h6>
+                    <div class="links-row">
+                        <a href="support.html"><i class="fa-solid fa-angle-left"></i>المساعدة و الدعم</a>
+                        <a href="trac.html"><i class="fa-solid fa-angle-left"></i>تتبع الطلب</a>
+                        <a href="retrieval.html"><i class="fa-solid fa-angle-left"></i>سياسة الاسترجاع</a>
+                        <a href="rols.html"><i class="fa-solid fa-angle-left"></i>الشروط و الأحكام </a>
+                    </div>
+                </div>
+
+        
+
+            </div>
+
+        </div>
+
+        <div class="bottom-footer">
+            <div class="contanier">
+                <p>Copyright &copy; <span>Z. </span>تصميم  <span>oday salah</span></p>
+            <div class="payment">
+                <img src="img/payment-1.png" alt="">
+                <img src="img/payment-2.png" alt="">
+                <img src="img/payment-3.png" alt="">
+                <img src="img/payment-4.png" alt="">
+            </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Swiper JS -->
+    <script src="swiperJs/swiper-bundle.min.js"></script>
+    <script src="prod.js"></script>
+    <!-- Linke File JS -->
+    <script src="main.js"></script>
+  </body>
+</html>

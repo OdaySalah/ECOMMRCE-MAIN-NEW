@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Methods Management</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+    body {
+      background-color: #ffffff;
+      font-family: Arial, sans-serif;
+    }
+
+    h2 {
+      color: #343a40;
+    }
+
+    .card {
+      border-radius: 8px;
+      border: none;
+      background-color: #ffffff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* تظليل خفيف */
+    }
+
+    .card-header {
+      border-bottom: none;
+    }
+
+    .btn-danger {
+      background-color: #e63946; /* لمسات باللون الأحمر */
+      border-color: #e63946;
+    }
+
+    .btn-danger:hover {
+      background-color: #d62828; /* لون أحمر داكن عند التمرير */
+      border-color: #d62828;
+    }
+
+    .table-bordered th,
+    .table-bordered td {
+      border: 1px solid #dee2e6;
+    }
+
+    .table thead th {
+      background-color: #ffffff;
+      color: #343a40;
+    }
+
+    .table tbody td {
+      color: #343a40;
+    }
+
+    .shadow {
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1); /* تحسين الـ Shadow */
+    }
+
+    .text-dark {
+      color: #343a40;
+    }
+  </style>
+  <body>
+    <div class="container my-5">
+      <h2 class="text-center mb-4">Manage Payment Methods</h2>
+
+      <!-- Form to Add New Payment Method -->
+      <div class="card shadow mb-4">
+        <div class="card-header bg-white">
+          <h5 class="text-dark">Add New Payment Method</h5>
+        </div>
+        <div class="card-body">
+          <form id="paymentForm">
+            <div class="form-group">
+              <label for="paymentName" class="text-dark"
+                >Payment Method Name</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="paymentName"
+                placeholder="Enter payment method"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-danger">
+              Add Payment Method
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Table to Display Payment Methods -->
+      <div class="card shadow">
+        <div class="card-header bg-white">
+          <h5 class="text-dark">Existing Payment Methods</h5>
+        </div>
+        <div class="card-body">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Payment Method</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="paymentTable">
+              <!-- Payment Methods will be added dynamically here -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

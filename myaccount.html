@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Account</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="swiperJs/swiper-bundle.min.css" />
+ 
+    <!-- Link Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Link File CSS -->
+    <link rel="stylesheet" href="style.css" />
+ 
+    <link rel="stylesheet" href="xc.css" />
+
+  </head>
+  <body class="menu-side-in-bag">
+    <header>
+      <div class="header-top">
+        <div class="contanier">
+          <p> مرحبا بكم في متجر z</p>
+          <div class="link-top-heder">
+            
+            <a href="mywishlist.html">المفضلات</a>
+            <a href="sign-in-page.html">تسجيل الدخول</a>
+            <a href="compare.html">مقارنة المنتجات</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-info">
+        <div class="contanier">
+                <a href="index.html">  <img  class="log" src="images/logo.png" alt=""></a> 
+
+          <div class="search-bar">
+            <form action="">
+              <input type="search" placeholder="ابحث عن طلبك..." />
+              <button class="btn-srch">بحث</button>
+            </form>
+          </div>
+          <div class="card">
+            <div class="price">
+              <p>السلة :</p>
+              <span>255.00 جنيه</span>
+              <a href="mycart.html"
+                ><i class="fa-solid fa-bag-shopping"></i>
+                <span class="count-in-card">2</span></a
+
+              >
+              
+            </div>
+           
+          </div>
+          
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="contanier">
+          <i id="open-side" class="fa-solid fa-bars"></i>
+          <ul class="nav-links">
+            <li><a href="index.html"> الرئيسة</a></li>
+
+        
+
+            <li>
+              <a href="features.html"> الأدوات المنزلية</a>
+            </li>
+
+            <li>
+              <a href="hmtls.html">الموبايلات و اكسسواراتها</a>
+            </li>
+            <li><a href="cloths.html"> الملابس </a></li>
+
+            <li><a href="betuflpage.html"> مستحضرات الجمال</a></li>
+            <li><a href="furniture.html"> المفروشات</a></li>
+          </ul>
+          <a href="sign-up-page.html" class="sign-in-btn"
+            ><i class="fa-solid fa-user-plus"></i> انشاء حساب
+          </a>
+        </div>
+      </div>
+    </header>
+    <section class="slide-sec contanier">
+      <div id="side-bar" class="side-bar">
+        <h5><i class="fa-solid fa-bars"></i> تسوق بواسطة القسم</h5>
+        <img class="log" src="images/logo.png" alt="" />
+        <i id="btn-close" class="fa-solid fa-bars fa-times"></i>
+        <ul class="side-links">
+            <a href="furniture.html"><li>الاجهزة المنزلية</li></a>
+           
+            <a href="hmtls.html"><li>الشواحن</li></a>
+            <a href="furniture.html"><li>المفروشات</li></a>
+            <a href="hmtls.html"><li>الهواتف</li></a>
+            <a href="cloths.html"><li>الملابس</li></a>
+            
+            <a href="hmtls.html"><li>اكسسوارات</li></a>
+            <a href="betuflpage.html"><li>مستحضرات التجميل</li></a>
+           
+
+        </ul>
+
+        
+    </div>
+            </section>
+ 
+
+    <div class="contanier ">
+      <div class="header-info">
+        <!-- Header Section -->
+        <div class="account-header "id="accountheader1">
+          <img src="https://via.placeholder.com/100" alt="Profile Picture" />
+          <div>
+            <h2>مرحباً، Oday Salah</h2>
+            <p>oday@example.com</p>
+          </div>
+        </div>
+        <style>
+        
+
+
+        </style>
+        <!-- Account Details -->
+        <div class="contanier">
+          <div class="section  " id="detaijs">
+            <h3 class="section-title mt-24">تفاصيل الحساب</h3>
+            <div class="row ">
+              <div class="col-md-6 ">
+                <ul>
+                  <li><strong>الاسم الكامل:</strong> Oday Salah</li>
+                  <li><strong>البريد الإلكتروني:</strong> oday@example.com</li>
+                  <li><strong>رقم الهاتف:</strong> +964 123 456 7890</li>
+                </ul>
+                <div class="container">
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="btn-container">
+                              
+                             <a href="Edit-account.html"><button class="btn btn-primary btn-custom">تعديل البيانات الشخصية</button></a> 
+                             <a href="Edit-pass.html">   <button class="btn btn-secondary btn-custom">تعديل كلمة المرور</button></a> 
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                </ul>
+              </div>
+
+          
+            </div>
+          </div>
+
+          <!-- Payment Methods -->
+          <div class="section" id="payadd">
+            <h3 class="section-title">طرق الدفع</h3>
+
+            <div class="container payment-container">
+                <h2>إدارة طرق الدفع</h2>
+                <form>
+                  <div class="mb-3">
+                    <label for="payment-method" class="form-label"
+                      >اختر طريقة الدفع</label
+                    >
+                    <select
+                      class="form-select"
+                      id="payment-method"
+                      aria-label="اختر طريقة الدفع"
+                    >
+                      <option selected>اختر طريقة الدفع</option>
+                      <option value="1">بطاقة ائتمان</option>
+                      <option value="2">PayPal</option>
+                      <option value="3">تحويل بنكي</option>
+                      <option value="4">الدفع عند الاستلام</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                      <a href="#"><button class="btn btn-primary btn-custom">تأكيد</button></a> 
+                  </div>
+                </form>
+              </div>
+          
+
+
+          </div>
+
+          <!-- Order History -->
+          <div class="section" id="payadd2">
+            <h3 class="section-title">سجل الطلبات</h3>
+<ul>
+          <li>  
+              <span>طلب #12345 - 10 أغسطس 2023</span>
+              <strong>مكتمل</strong>
+            </li>
+            <li> 
+              <span>طلب #12346 - 15 يوليو 2023</span>
+              <strong>مكتمل</strong>
+            </li>
+       <li>  
+              <span>طلب #12347 - 25 يونيو 2023</span>
+              <strong>ملغى</strong>
+         </li>
+         <a href="purchases.html"><button class="btn btn-primary btn-custom">المشتريات</button></a> 
+        
+          </div>
+        </ul>
+        </div>
+      </div>
+    </div>
+    <div class="back-top">
+            <a href="#">الرجوع للأعلى</a>
+        </div>
+    
+    
+        <footer>
+            <div class="contanier">
+                <div class="top-footer">
+                    <div class="row">
+                            <img  class="log" src="images/logo.png" alt="">
+                        <div class="hotline">
+                            
+                            <div class="hotline-text">
+                                <h6>خدمة عملاء 24/7</h6>
+                                <span>(+100) 123 456 7890</span>
+                            </div>
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+                        
+                    </div>
+                    <div class="small-row">
+                        <h6> اعرف المزيد عنا</h6>
+                        <div class="links-row">
+                            <a href="about.html"> <i class="fa-solid fa-angle-left"></i>معلومات عن Z </a>
+                            <a href="Shipping -delivery.html"><i class="fa-solid fa-angle-left"></i>الشحن و التوصيل </a>
+                           
+                        </div>
+                    </div>
+    
+                    <div class="small-row">
+                        <h6> تسوق معنا</h6>
+                        <div class="links-row">
+                            <a href="myaccount.html"><i class="fa-solid fa-angle-left"></i>حسابك</a>
+                            <a href="purchases.html"> <i class="fa-solid fa-angle-left"></i>مشترياتك</a>
+                       
+                        </div>
+                    </div>
+    
+                    <div class="small-row">
+                        <h6> دعنا نساعدك</h6>
+                        <div class="links-row">
+                            <a href="support.html"><i class="fa-solid fa-angle-left"></i>المساعدة و الدعم</a>
+                            <a href="trac.html"><i class="fa-solid fa-angle-left"></i>تتبع الطلب</a>
+                            <a href="retrieval.html"><i class="fa-solid fa-angle-left"></i>سياسة الاسترجاع</a>
+                            <a href="rols.html"><i class="fa-solid fa-angle-left"></i>الشروط و الأحكام </a>
+                        </div>
+                    </div>
+    
+            
+    
+                </div>
+    
+            </div>
+    
+            <div class="bottom-footer">
+                <div class="contanier">
+                    <p>Copyright &copy; <span>Z. </span>تصميم  <span>oday salah</span></p>
+                <div class="payment">
+                    <img src="img/payment-1.png" alt="">
+                    <img src="img/payment-2.png" alt="">
+                    <img src="img/payment-3.png" alt="">
+                    <img src="img/payment-4.png" alt="">
+                </div>
+                </div>
+            </div>
+        </footer>
+    
+   
+    <!-- Bootstrap JS -->
+    <script src="swiperJs/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="prod.js"></script>
+    <!-- Linke File JS -->
+    <script src="main.js"></script>
+  </body>
+</html>

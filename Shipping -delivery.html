@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Z | Online Store</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="swiperJs/swiper-bundle.min.css" />
+        <!-- Link Swiper's CSS -->
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+      />
+
+    <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Link File CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="menu-side-in-bag">
+
+    <header>
+            <style>
+                    .log{
+                    
+                        width: 100px;
+                        height: 100px;
+                    }
+                    
+                    </style>
+
+        <div class="header-top">
+            <div class="contanier">
+           c
+             <div class="link-top-heder">
+                <a href="myaccount.html">الحساب</a>
+                <a href="mywishlist.html">المفضلات</a>
+                <a href="sign-in-page.html">تسجيل الدخول</a>
+                <a href="compare.html">مقارنة المنتجات</a>
+             </div>
+         </div>
+           </div>
+
+           <div class="header-info">
+            <div class="contanier">
+            <a href="index.html">  <img  class="log" src="images/logo.png" alt=""></a>  
+            
+            <div class="search-bar">
+                <form action="">
+                    <input type="search" placeholder="ابحث عن طلبك...">
+                    <button class="btn-srch">بحث</button>
+                </form>
+            </div>
+            <div class="card">
+              <div class="price">
+                <p>السلة :</p>
+                <span>255.00 جنيه</span>
+                <a href="mycart.html"
+                  ><i class="fa-solid fa-bag-shopping"></i>
+                  <span class="count-in-card">2</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-bottom">
+           <div class="contanier">
+                <i id="open-side" class="fa-solid fa-bars"></i>
+            <ul class="nav-links">
+                    
+                <li><a href="index.html"> الرئيسة</a>
+                
+                </li>
+
+      
+
+                <li>
+                    <a href="features.html"> الأدوات المنزلية</a>
+                </li>
+
+                <li>
+                    <a href="hmtls.html">الموبايلات و اكسسواراتها</a>
+                </li>
+                <li><a href="cloths.html"> الملابس </a></li>
+
+                <li><a href="betuflpage.html"> مستحضرات الجمال</a></li>
+                <li><a href="furniture.html"> المفروشات</a></li>
+              
+
+
+            </ul>
+            <a href="sign-up-page.html" class="sign-in-btn"><i class="fa-solid fa-user-plus"></i> انشاء حساب </a>
+
+            
+           </div>
+        </div>
+
+
+    </header>
+
+    <section class="slide-sec contanier">
+        <div id="side-bar" class="side-bar">
+            <h5><i class="fa-solid fa-bars"></i> SHOP BY DEPARTMENT</h5>
+            <img class="log" src="images/logo.png" alt="" />
+            <i id="btn-close" class="fa-solid fa-bars fa-times"></i>
+            <ul class="side-links">
+                <a href="furniture.html"><li>الاجهزة المنزلية</li></a>
+               
+                <a href="hmtls.html"><li>الشواحن</li></a>
+                <a href="furniture.html"><li>المفروشات</li></a>
+                <a href="hmtls.html"><li>الهواتف</li></a>
+                <a href="cloths.html"><li>الملابس</li></a>
+                
+                <a href="hmtls.html"><li>اكسسوارات</li></a>
+                <a href="betuflpage.html"><li>مستحضرات التجميل</li></a>
+               
+
+            </ul>
+
+            
+        </div>
+
+
+    </section>
+    
+    <!-- Link File CSS -->
+
+    <style>
+      body {
+        background-color: #fff;
+        color: #333;
+      }
+      .section {
+        padding: 50px 0;
+        border: 2px solid #ec221b;
+      }
+      .section-title {
+        margin-bottom: 30px;
+        text-align: center;
+        color: #ff1e16; /* لون أحمر */
+      }
+      .list-group-item {
+        font-size: 1.1rem;
+        border: 1px solid #ff5e58;
+      }
+      .btn-red {
+        background-color: #ec221b;
+        color: white;
+        border: none;
+      }
+      .btn-red:hover {
+        background-color: #ec221b;
+      }
+      .bg-red {
+        background-color: #f2dede;
+      }
+      .text-red {
+        color: #ff1e16;
+      }
+      .details {
+        display: none;
+        margin-top: 20px;
+      }
+      .log {
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+ 
+  <body>
+    
+    <!-- Shipping and Delivery Section -->
+    <section id="shipping" class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>سياسة الشحن والتوصيل</h2>
+        </div>
+        <p>
+          نحن ملتزمون بتوفير خدمة شحن سريعة وآمنة لعملائنا في مختلف مدن الدولة.
+          يرجى قراءة التفاصيل أدناه لمزيد من المعلومات حول سياسات الشحن والتوصيل
+          الخاصة بنا.
+        </p>
+
+        <!-- Available Cities -->
+        <div class="section-title">
+          <h3>المدن المتاحة للشحن</h3>
+        </div>
+        <p>نقوم بالشحن إلى المدن التالية:</p>
+        <ul class="list-group">
+          <li class="list-group-item">الرياض</li>
+          <li class="list-group-item">جدة</li>
+          <li class="list-group-item">الدمام</li>
+          <li class="list-group-item">المدينة المنورة</li>
+          <li class="list-group-item">مكة المكرمة</li>
+        </ul>
+
+
+        <!-- Button to Show More Details -->
+          <small class="text-body-secondary">
+        <button id="load-more" class="btn btn-custom mt-3 load-more"  onclick="toggleDetails()">عرض المزيد</button>
+      </small>
+
+        <!-- Hidden Details Section -->
+        <div id="extraDetails" class="details bg-red p-4">
+          <h5 class="text-red">تفاصيل إضافية:</h5>
+          <p>
+            نحن نضمن شحن آمن وسريع إلى جميع المدن المدرجة. قد تتفاوت أوقات
+            التسليم بناءً على حجم الطلبات والعطلات.
+          </p>
+        </div>
+
+        <!-- Shipping Fees -->
+        <div class="section-title">
+          <h3>رسوم الشحن</h3>
+        </div>
+        <p>تختلف رسوم الشحن بناءً على المدينة:</p>
+        <ul class="list-group">
+          <li class="list-group-item">داخل الرياض: 20 ريال</li>
+          <li class="list-group-item">إلى جدة والدمام: 30 ريال</li>
+          <li class="list-group-item">مدن أخرى: 40 ريال</li>
+        </ul>
+
+        <!-- Delivery Times -->
+        <div class="section-title">
+          <h3>أوقات التوصيل المتوقعة</h3>
+        </div>
+        <ul class="list-group">
+          <li class="list-group-item">داخل الرياض: 1-2 أيام عمل</li>
+          <li class="list-group-item">إلى جدة والدمام: 2-4 أيام عمل</li>
+          <li class="list-group-item">مدن أخرى: 3-5 أيام عمل</li>
+        </ul>
+
+        <!-- Shipping Companies -->
+        <div class="section-title">
+          <h3>شركات الشحن التي نتعامل معها</h3>
+        </div>
+        <ul class="list-group">
+          <li class="list-group-item">أرامكس</li>
+          <li class="list-group-item">سمسا</li>
+        </ul>
+
+        <!-- Order Tracking -->
+        <div class="section-title">
+          <h3>تتبع الطلبات</h3>
+        </div>
+        <p>
+          بمجرد شحن طلبك، سوف نرسل إليك بريدًا إلكترونيًا يحتوي على رقم تتبع
+          الطلب. يمكنك استخدام هذا الرقم لتتبع طلبك من خلال الموقع الإلكتروني
+          لشركة الشحن.
+        </p>
+
+        <!-- Return Policy for Shipping Issues -->
+        <div class="section-title">
+          <h3>سياسة الإرجاع في حالة مشاكل الشحن</h3>
+        </div>
+        <p>
+          في حالة وصول الطلبات تالفة أو غير مطابقة، يرجى التواصل مع فريق خدمة
+          العملاء لدينا في غضون 48 ساعة من استلام الطلب، وسنعمل على حل المشكلة
+          في أسرع وقت ممكن.
+        </p>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function toggleDetails() {
+        const details = document.getElementById("extraDetails");
+        if (details.style.display === "none" || details.style.display === "") {
+          details.style.display = "block";
+        } else {
+          details.style.display = "none";
+        }
+      }
+    </script>
+    <div class="back-top">
+      <a href="#">الرجوع للأعلي</a>
+    </div>
+  
+
+    <footer>
+        <div class="contanier">
+            <div class="top-footer">
+                <div class="row">
+                        <img  class="log" src="images/logo.png" alt="">
+                    <div class="hotline">
+                        
+                        <div class="hotline-text">
+                            <h6>خدمة عملاء 24/7</h6>
+                            <span>(+100) 123 456 7890</span>
+                        </div>
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    
+                </div>
+                <div class="small-row">
+                    <h6> اعرف المزيد عنا</h6>
+                    <div class="links-row">
+                        <a href="about.html"> <i class="fa-solid fa-angle-left"></i>معلومات عن Z </a>
+                        <a href="Shipping -delivery.html"><i class="fa-solid fa-angle-left"></i>الشحن و التوصيل </a>
+                       
+                    </div>
+                </div>
+
+                <div class="small-row">
+                    <h6> تسوق معنا</h6>
+                    <div class="links-row">
+                        <a href="myaccount.html"><i class="fa-solid fa-angle-left"></i>حسابك</a>
+                        <a href="purchases.html"> <i class="fa-solid fa-angle-left"></i>مشترياتك</a>
+                   
+                    </div>
+                </div>
+
+                <div class="small-row">
+                    <h6> دعنا نساعدك</h6>
+                    <div class="links-row">
+                        <a href="support.html"><i class="fa-solid fa-angle-left"></i>المساعدة و الدعم</a>
+                        <a href="trac.html"><i class="fa-solid fa-angle-left"></i>تتبع الطلب</a>
+                        <a href="retrieval.html"><i class="fa-solid fa-angle-left"></i>سياسة الاسترجاع</a>
+                        <a href="rols.html"><i class="fa-solid fa-angle-left"></i>الشروط و الأحكام </a>
+                    </div>
+                </div>
+
+        
+
+            </div>
+
+        </div>
+
+        <div class="bottom-footer">
+            <div class="contanier">
+                <p>Copyright &copy; <span>Z. </span>تصميم  <span>oday salah</span></p>
+            <div class="payment">
+                <img src="img/payment-1.png" alt="">
+                <img src="img/payment-2.png" alt="">
+                <img src="img/payment-3.png" alt="">
+                <img src="img/payment-4.png" alt="">
+            </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Swiper JS -->
+    <script src="swiperJs/swiper-bundle.min.js"></script>
+    <script src="prod.js"></script>
+    <!-- Linke File JS -->
+    <script src="main.js"></script>
+  </body>
+</html>

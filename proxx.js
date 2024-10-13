@@ -514,7 +514,7 @@ function displayCards(page) {
         <img src="${product.img}" alt="Product Image">
         <h5 class="mt-2">${product.title}</h5>
         <div class="price">${product.price}</div>
-        <p class="description">${product.description}</p>
+        <p class="description"style="  margin-bottom: 20%;">${product.description}</p>
         <span class="discount">34%</span>
         <div class="icons-overlay">
           <ul class="product-action">
